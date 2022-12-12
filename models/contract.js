@@ -13,9 +13,26 @@ module.exports = (sequelize, DataTypes) => {
   }
   Contract.init(
     {
-      budget: DataTypes.BIGINT,
-      eta: DataTypes.DATE,
-      details: DataTypes.STRING
+      budget: {
+        type: Sequelize.BIGINT,
+        allowNull: false
+      },
+      eta: {
+        type: Sequelize.DATE,
+        allowNull: false
+      },
+      details: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      }
     },
     {
       sequelize,

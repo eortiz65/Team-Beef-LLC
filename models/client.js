@@ -8,15 +8,34 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Client.belongsTo(models.Admin, { foreignKey: 'adminId' })
     }
   }
   Client.init(
     {
-      company: DataTypes.STRING,
-      contact: DataTypes.STRING,
-      services: DataTypes.STRING,
-      comments: DataTypes.STRING
+      company: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      contact: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      services: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      comments: {
+        type: Sequelize.STRING
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      }
     },
     {
       sequelize,
