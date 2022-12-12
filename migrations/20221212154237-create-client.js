@@ -10,13 +10,16 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       company: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       contact: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       services: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       comments: {
         type: Sequelize.STRING

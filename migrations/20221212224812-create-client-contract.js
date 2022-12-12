@@ -11,6 +11,7 @@ module.exports = {
       },
       clientId: {
         type: Sequelize.INTEGER,
+        allowNull: false,
         references: {
           model: 'clients',
           key: 'id'
@@ -18,6 +19,7 @@ module.exports = {
       },
       contractId: {
         type: Sequelize.INTEGER,
+        allowNull: false,
         references: {
           model: 'contracts',
           key: 'id'
