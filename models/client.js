@@ -9,6 +9,15 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Client.belongsTo(models.Admin, { foreignKey: 'adminId' })
+      Client.belongsToMany(models.Contract, {
+        as: 'clientcontract',
+        through: models.ClientContract,
+        foreignKey: 'postId'
+      })
+      Client.hasMany(models.Contract, {
+        as: 'associated_contracts',
+        foreignKey: 'clientId'
+      })
     }
   }
   Client.init(

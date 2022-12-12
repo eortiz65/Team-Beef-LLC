@@ -8,7 +8,16 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Contract.belongsTo(models.Admin, { foreignKey: 'adminId' })
+      Contract.belongsTo(models.Client, {
+        as: 'associated_client',
+        foreignKey: 'clientId'
+      })
+      Contract.belongsToMany(models.Client, {
+        as: 'contracts',
+        through: models.ClientContract,
+        foreignKey: 'contractId'
+      })
     }
   }
   Contract.init(
