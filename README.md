@@ -13,6 +13,12 @@
 ![Idea](/media/KylesIdeaBlameHim.png)
 ![Fault](/media/my-fault-kyle-davis.gif)
 
+### Updates
+
+####
+
+#### First model Created
+
 ### Credits
 
 [Paramount Co](https://www.paramount.com/)
