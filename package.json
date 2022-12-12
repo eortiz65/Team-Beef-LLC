@@ -9,5 +9,8 @@
     "pg": "^8.8.0",
     "react-router-dom": "^6.4.5",
     "sequelize": "^6.26.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.2"
   }
 }
