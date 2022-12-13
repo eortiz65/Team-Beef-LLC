@@ -1,7 +1,7 @@
 import Axios from 'axios'
 
-const HEROKU_URL = 'https://localhost:3000/beef'
-const LOCAL_URL = 'https://localhost:3000/beef'
+const HEROKU_URL = 'localhost:3000/beef'
+const LOCAL_URL = 'localhost:3000/beef'
 export const BASE_URL =
   process.env.NODE_ENV === 'teambeef_development' ? LOCAL_URL : HEROKU_URL
 
