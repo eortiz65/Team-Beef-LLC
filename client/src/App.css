@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+/* Home Styles*/
 
 .home{
   width: 600px;
@@ -11,4 +12,51 @@
   margin-top: 50px;
   border-radius: 15px;
   padding-bottom: 35px;
+}
+
+.homepage-title{
+  background-color: darkslategray;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px;
+}  
+
+.login-button, .register-button{
+  background-color: rgb(67, 185, 185);
+  padding: 10px 40px;
+}
+.login-button:hover, .register-button:hover{
+  background-color: #644997;
+  border-top: 2px solid gray;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid gainsboro;
+  border-left: 2px solid gainsboro;
+  padding: 8px 40px;
+}
+
+.home-divider {
+  padding: 10px;
+  font-weight: 700;
+}
+
+.register{
+  width: 40%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.register-title{
+  background-color: rgb(141, 150, 112);
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.register-form{
+  display:grid;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(42, 47, 96);
+  padding: 10px;
 }
