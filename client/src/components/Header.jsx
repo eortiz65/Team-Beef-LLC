@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom'
+
 const Header = () => {
 
   return (
     <div>
-      <h1>This is Header</h1>
+      <Link className="nav-link right-align" to = '/login'><div>LOGIN</div></Link>
+      <Link className="nav-link" to = '/register'> <div>REGISTER</div></Link>
     </div>
   )
 }
