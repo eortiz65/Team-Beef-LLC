@@ -7,7 +7,7 @@
 
 .home{
   width: 600px;
-  background-color: rgb(69, 126, 126);
+  background-color: rgb(42, 47, 96);
   padding: 0;
   margin:auto;
   margin-top: 50px;
@@ -16,7 +16,8 @@
 }
 
 .homepage-title{
-  background-color: darkslategray;
+  background-color: rgb(228,36,15);
+  color: rgb(254,217,52);
   font-size: 30px;
   font-weight: 700;
   padding: 15px;
