@@ -39,20 +39,20 @@
   font-weight: 700;
 }
 
-.register{
+.register, .login{
   width: 40%;
   margin: auto;
   padding: 20px 0;
 }
 
-.register-title{
+.register-title, .login-title {
   background-color: rgb(141, 150, 112);
   font-size: 40px;
   font-weight: 700;
   padding: 10px;
 }
 
-.register-form{
+.register-form, .login-form {
   display:grid;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
   align-items: center;

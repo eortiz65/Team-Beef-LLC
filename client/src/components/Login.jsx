@@ -1,7 +1,19 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const Login = (props) = () => {
+const Login = () => {
+  const [formValues, setFormValues] = useState({ email: '', password: ''})
+  let navigate = useNavigate()
+
+  const handleChange = (e) => {
+    setFormValues({...formValues, [e.target.name]: e.target.value})
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setFormValues({email: '', password: ''})
+    navigate('/')
+}
 
   return(
     <div className="login">
