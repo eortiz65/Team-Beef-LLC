@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
   class Contract extends Model {
     /**
      * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
+     * This method is not a part of DataTypes lifecycle.
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
@@ -23,24 +23,24 @@ module.exports = (sequelize, DataTypes) => {
   Contract.init(
     {
       budget: {
-        type: Sequelize.BIGINT,
+        type: DataTypes.BIGINT,
         allowNull: false
       },
       eta: {
-        type: Sequelize.DATE,
+        type: DataTypes.DATE,
         allowNull: false
       },
       details: {
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
         allowNull: false
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: DataTypes.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: DataTypes.DATE
       }
     },
     {

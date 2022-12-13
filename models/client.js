@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
   class Client extends Model {
     /**
      * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
+     * This method is not a part of DataTypes lifecycle.
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
@@ -23,27 +23,27 @@ module.exports = (sequelize, DataTypes) => {
   Client.init(
     {
       company: {
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
         allowNull: false
       },
       contact: {
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
         allowNull: false
       },
       services: {
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
         allowNull: false
       },
       comments: {
-        type: Sequelize.STRING
+        type: DataTypes.STRING
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: DataTypes.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: DataTypes.DATE
       }
     },
     {
