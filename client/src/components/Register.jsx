@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { RegisterAdmin } from '../services/Auth'
+import { RegisterAdmin } from '../services/axios'
 
 const Register = () => {
   let navigate = useNavigate()
@@ -44,16 +44,16 @@ const Register = () => {
                 placeholder="Name"
                 value={formValues.name}
                 required/>
-            <br></br><br></br>            
+            <br></br>          
             <label> Email Address: </label>
             <input
                 onChange={handleChange}
                 name="email"
                 type="email"
-                placeholder="example@example.com"
+                placeholder="example@mail.com"
                 value={formValues.email}
                 required/>
-            <br></br><br></br>
+            <br></br>
             <label> Password: </label>
             <input
                 onChange={handleChange}
@@ -62,7 +62,7 @@ const Register = () => {
                 placeholder='Your Password'
                 value={formValues.password}
                 required/>
-            <br></br><br></br>         
+            <br></br>         
             <button className="register-button" disabled={(!formValues.email || !formValues.password || !formValues.name )}>Create Account</button>
         </form>
     </div>

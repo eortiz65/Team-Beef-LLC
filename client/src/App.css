@@ -47,7 +47,8 @@
 }
 
 .register-title, .login-title {
-  background-color: rgb(141, 150, 112);
+  background-color: rgb(228,36,15);
+  color: rgb(254,217,52);
   font-size: 40px;
   font-weight: 700;
   padding: 10px;
@@ -64,11 +65,12 @@
 
 .nav-link {
   padding: 20px;
+  color: rgb(24,113,145);
 }
-.nav-link:hover {
+/* .nav-link:hover {
   background-color: rgb(27, 73, 73);
   cursor: pointer;
-}
+} */
 
 .right-align {
   margin-left: auto;
