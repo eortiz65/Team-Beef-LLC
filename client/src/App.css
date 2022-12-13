@@ -60,3 +60,15 @@
   background-color: rgb(42, 47, 96);
   padding: 10px;
 }
+
+.nav-link {
+  padding: 20px;
+}
+.nav-link:hover {
+  background-color: rgb(27, 73, 73);
+  cursor: pointer;
+}
+
+.right-align {
+  margin-left: auto;
+}
