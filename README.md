@@ -21,6 +21,10 @@
 
 ![Deploy](/media/HerokuDeploy.png)
 
+#### Heroku app running
+
+![App runnin](/media/AppDeployed.png)
+
 ### Credits
 
 [Paramount Co](https://www.paramount.com/)
