@@ -90,3 +90,9 @@
 .bret-story, .edward-story , .erwin-story, .fredy-story{
   color: rgb(234,237,242);
 }
+
+/* Admin styles*/
+
+.admin-container {
+  padding: 0 0 40px;
+}

@@ -38,7 +38,7 @@ export const UpdateAdmin = async (data) => {
 
 export const DeleteAdmin = async (data) => {
   try {
-    const res = await Client.delete('/admin/:admin_id', data)
+    await Client.destroy('/admin/:admin_id', data)
     return alert('Admin Deleted')
   } catch (error) {
     throw error
