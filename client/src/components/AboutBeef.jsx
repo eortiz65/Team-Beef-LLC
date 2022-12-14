@@ -5,7 +5,7 @@ const AboutBeef = () => {
     <div>
       <section className="about-section">
         <div className="bret">
-          <img src="/media/Bret-Pic.png"/>
+          <img src="client/src/media/Bret-Pic.png" alt="bret-pic"/>
         </div>
       </section>
     </div>
