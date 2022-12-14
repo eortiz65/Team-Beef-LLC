@@ -15,9 +15,9 @@
 
 ### Updates
 
-####
-
 #### First model Created
+
+#### Heroku app created
 
 ### Credits
 
