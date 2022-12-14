@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Header from './components/Header'
 import Register from './components/Register'
 import Login from './components/Login'
+import AboutBeef from './components/AboutBeef'
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/aboutbeef" element={<AboutBeef />} />
         </Routes>
       </main>
     </div>
