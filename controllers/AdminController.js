@@ -23,8 +23,6 @@ const GetAdmin = async (req, res) => {
 }
 
 const CreateAdmin = async (req, res) => {
-  console.log(req.body)
-
   try {
     const admin = await Admin.create(req.body)
     res.send(admin)
