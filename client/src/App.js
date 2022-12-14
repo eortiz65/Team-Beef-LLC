@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Register from './components/Register'
 import Login from './components/Login'
 import AboutBeef from './components/AboutBeef'
+import AdminProfile from './components/AdminProfile'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/aboutbeef" element={<AboutBeef />} />
+          <Route path="/profile" element={<AdminProfile />} />
         </Routes>
       </main>
     </div>
