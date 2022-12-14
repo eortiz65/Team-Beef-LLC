@@ -76,3 +76,17 @@
 .right-align {
   margin-left: auto;
 }
+
+/* About Us styles*/
+
+.bret-title, .bret-initial, .edward-title, .edward-initial {
+  color:rgb(228,36,15);
+}
+
+.bret-initial, .edward-initial {
+  font-size: x-large;
+}
+
+.bret-story, .edward-story {
+  color: rgb(234,237,242);
+}
