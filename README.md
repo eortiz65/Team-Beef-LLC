@@ -23,7 +23,7 @@
 
 #### Heroku app running
 
-![App runnin](/media/AppDeployed.png)
+![App Deployed](/media/AppDeployed.png)
 
 ### Credits
 
