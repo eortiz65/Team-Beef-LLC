@@ -79,14 +79,14 @@
 
 /* About Us styles*/
 
-.bret-title, .bret-initial, .edward-title, .edward-initial {
+.bret-title, .bret-initial, .edward-title, .edward-initial , .erwin-title, .erwin-initial, .fredy-title, .fredy-initial{
   color:rgb(228,36,15);
 }
 
-.bret-initial, .edward-initial {
+.bret-initial, .edward-initial, .erwin-initial, .fredy-initial {
   font-size: x-large;
 }
 
-.bret-story, .edward-story {
+.bret-story, .edward-story , .erwin-story, .fredy-story{
   color: rgb(234,237,242);
 }

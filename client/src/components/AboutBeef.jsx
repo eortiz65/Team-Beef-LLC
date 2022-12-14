@@ -14,6 +14,16 @@ const AboutBeef = () => {
           <h1 className="edward-title">Edward "the trickster rogue" Yuabov</h1>
           <p className="edward-story"><span className="edward-initial">E</span>dward is as cunning as fox.</p>
         </div>
+        <div className="erwin">
+          <img src={require("../media/erwin-fighter.png")} alt="Erwin-Pic"/>
+          <h1 className="erwin-title">Erwin "the veteran fighter" Ortiz</h1>
+          <p className="erwin-story"><span className="erwin-initial">E</span>rwin experience on the field has given him the wisdom necessary to adapt to any situation</p>
+        </div>
+        <div className="fredy">
+          <img src={require("../media/fredy-mage.png")} alt="Fredy-Pic"/>
+          <h1 className="fredy-title">Fredy "the Archimage" Laksmono</h1>
+          <p className="fredy-story"><span className="fredy-initial">F</span>redy, the savant, the prodigy, the chosen one. He goes by many titles.</p>
+        </div>
       </section>
     </div>
   )
