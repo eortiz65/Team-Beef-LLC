@@ -68,7 +68,7 @@ nav {
   padding: 20px 0;
 }
 
-.register-title, .login-title, .homepage-title {
+.register-title, .login-title, .homepage-title, .about-intro {
   background-color: rgb(228,36,15);
   color: rgb(254,217,52);
   font-size: 40px;
@@ -95,6 +95,13 @@ nav {
 }
 
 /* About Us styles*/
+.bret, .erwin {
+  align-items: flex-start;
+}
+
+.edward, .fredy {
+  align-items: flex-end;
+}
 
 .bret-title, .bret-initial, .edward-title, .edward-initial , .erwin-title, .erwin-initial, .fredy-title, .fredy-initial{
   color:rgb(228,36,15);
