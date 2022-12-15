@@ -1,6 +1,6 @@
 import Client from './api'
 
-export const RegisterAdmin = async (data) => {
+export const registerAdmin = async (data) => {
   try {
     const res = await Client.post('/admin/create', data)
     return res.data
@@ -9,7 +9,7 @@ export const RegisterAdmin = async (data) => {
   }
 }
 
-export const GetAdmins = async (data) => {
+export const getAdmins = async (data) => {
   try {
     const res = await Client.get('/admin', data)
     return res.data
@@ -18,7 +18,7 @@ export const GetAdmins = async (data) => {
   }
 }
 
-export const GetAdmin = async (data) => {
+export const getAdmin = async (data) => {
   try {
     const res = await Client.get('/admin/:admin_id', data)
     return res.data
@@ -27,7 +27,7 @@ export const GetAdmin = async (data) => {
   }
 }
 
-export const UpdateAdmin = async (data) => {
+export const updateAdmin = async (data) => {
   try {
     const res = await Client.update('/admin/:admin_id', data)
     return res.data
@@ -36,7 +36,7 @@ export const UpdateAdmin = async (data) => {
   }
 }
 
-export const DeleteAdmin = async (data) => {
+export const deleteAdmin = async (data) => {
   try {
     await Client.destroy('/admin/:admin_id', data)
     return alert('Admin Deleted')

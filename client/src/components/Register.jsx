@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { RegisterAdmin } from '../services/axios'
+import { registerAdmin } from '../services/axios'
 
 const Register = () => {
   let navigate = useNavigate()
@@ -17,7 +17,7 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    await RegisterAdmin({
+    await registerAdmin({
         name: formValues.name,
         email: formValues.email,
         password: formValues.password,
