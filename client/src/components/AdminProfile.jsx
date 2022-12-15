@@ -4,6 +4,13 @@ import { useNavigate } from "react-router-dom";
 const AdminProfile = (props) => {
   let navigate = useNavigate()
 
+  const handleUpdate = async (e) => {
+    e.preventDefault()
+    await updateAdmin()
+    alert('Password updated')
+    navigate('/admins')
+  }
+
   const handleDelete = async (e) => {
     e.preventDefault()
     await deleteAdmin()
@@ -25,7 +32,10 @@ const AdminProfile = (props) => {
         </div>
       </div>
       <div>
-      <button className='delete-admin-button' onClick={handleDelete}>Delete Account</button>
+      <button className='update-admin-button' onClick={handleUpdate}>Update password</button>
+      </div>
+      <div>
+        <button className='delete-admin-button' onClick={handleDelete}>Delete Account</button>
       </div>
     </div>
   )

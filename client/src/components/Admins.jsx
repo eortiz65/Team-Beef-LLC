@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import AdminProfile from "./AdminProfile"
 import { getAdmins } from "../services/axios"
 

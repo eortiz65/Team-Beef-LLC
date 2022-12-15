@@ -8,6 +8,8 @@
 [LinkedIn](https://www.linkedin.com/in/erwin-e-ortiz/)
 [GitHub](https://github.com/eortiz65)
 
+### It all started the first day of unit 1, our first task ever as a SEIR student was to choose a team name and thus Team Beef was born.
+
 ## Blame Kyle Davis
 
 ![Idea](/media/KylesIdeaBlameHim.png)
