@@ -1,12 +1,13 @@
 import './App.css'
 import React from 'react'
+import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Header from './components/Header'
 import Register from './components/Register'
 import Login from './components/Login'
 import AboutBeef from './components/AboutBeef'
-import AdminProfile from './components/AdminProfile'
+// import AdminProfile from './components/AdminProfile'
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/aboutbeef" element={<AboutBeef />} />
-          <Route path="/profile" element={<AdminProfile />} />
+          {/* <Route path="/profile" element={<AdminProfile />} /> */}
         </Routes>
       </main>
     </div>

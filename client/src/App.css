@@ -96,3 +96,12 @@
 .admin-container {
   padding: 0 0 40px;
 }
+
+.delete-admin-button {
+  background-color:rgb(217, 45, 45);
+  font-weight: 900;
+  padding: 7px 7px;
+  margin: 0 0 15px 0;
+  opacity: 80%;
+  margin-top: 50px;
+}
