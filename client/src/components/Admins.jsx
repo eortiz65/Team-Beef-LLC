@@ -14,10 +14,12 @@ const Admins = () => {
 
     apiCall()
   }, [])
+
+
   return (
     <div className="admins-container">
-      {admins.map((admin) => (
-        <AdminProfile key={admin.id} admins={admins}/>
+      {admins.map((admins) => (
+        <AdminProfile key={admins.id} admins={admins}/>
       ))}
     </div>
   )
