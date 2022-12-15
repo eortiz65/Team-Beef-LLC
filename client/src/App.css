@@ -6,8 +6,11 @@
 /* Home Styles*/
 
 .home{
+  display: flex;
+  justify-content: space-between;
   width: 600px;
   background-color: rgb(42, 47, 96);
+  text-align: justify;
   padding: 0;
   margin:auto;
   margin-top: 50px;
@@ -27,27 +30,45 @@
   background-color: rgb(67, 185, 185);
   padding: 10px 40px;
 }
-.login-button:hover, .register-button:hover{
-  background-color: #644997;
-  border-top: 2px solid gray;
-  border-right: 2px solid gray;
-  border-bottom: 2px solid gainsboro;
-  border-left: 2px solid gainsboro;
-  padding: 8px 40px;
-}
 
 .home-divider {
   padding: 10px;
   font-weight: 700;
 }
+/* Nav Bar */
+nav {
+  display: flex;
+  background-color: rgb(35, 44, 44);
+  font-weight: 700;
+  padding: 0 10px;
+  position: sticky;
+  top: 0;
+}
+.nav-link {
+  padding: 20px;
+}
+.nav-link:hover {  
+  cursor: pointer;
+}
 
+.nav-title {
+  font-size: 30px;
+  font-weight: 800;
+  padding: 10px 20px;
+}
+
+.right-align {
+  margin-left: auto;
+}
 .register, .login{
+  display: flex;
+  justify-content: space-between;
   width: 40%;
   margin: auto;
   padding: 20px 0;
 }
 
-.register-title, .login-title {
+.register-title, .login-title, .homepage-title {
   background-color: rgb(228,36,15);
   color: rgb(254,217,52);
   font-size: 40px;
@@ -68,10 +89,6 @@
   padding: 20px;
   color: rgb(24,113,145);
 }
-/* .nav-link:hover {
-  background-color: rgb(27, 73, 73);
-  cursor: pointer;
-} */
 
 .right-align {
   margin-left: auto;
@@ -104,4 +121,13 @@
   margin: 0 0 15px 0;
   opacity: 80%;
   margin-top: 50px;
+}
+
+.mascot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
 }

@@ -7,6 +7,9 @@ const AboutBeef = () => {
         <div className="bret">
           <img src={require("../media/bret-paladin.png")} alt="Bret-Pic"/>
           <h1 className="bret-title">Bret "the Righteous Paladin" Borden</h1>
+          <a href="url">Git Hub</a>
+          <br></br>
+          <a href="url">LinkedIn</a>
           <p className="bret-story"><span className="bret-initial">B</span>ret was definitely born to be the face of the party</p>
         </div>
         <div className="edward">
