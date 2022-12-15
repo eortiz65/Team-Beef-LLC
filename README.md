@@ -1,6 +1,6 @@
 # Team-Beef-LLC
 
-![Beef](/media/Beef_Mascot.jpg)
+![Beef](/media/beef-mascot.jpg)
 
 ## by Erwin Ortiz
 
