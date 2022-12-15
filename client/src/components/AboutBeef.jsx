@@ -25,9 +25,9 @@ const AboutBeef = () => {
         <div className="erwin">
           <img src={require("../media/erwin-fighter.png")} alt="Erwin-Pic"/>
           <br></br>
-          <a href="url">Git Hub</a>
+          <a href="https://github.com/eortiz65">Git Hub</a>
           <br></br>
-          <a href="url">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/erwin-e-ortiz/">LinkedIn</a>
           <h1 className="erwin-title">Erwin "the veteran fighter" Ortiz</h1>
           <p className="erwin-story"><span className="erwin-initial">E</span>rwin experience on the field has given him the wisdom necessary to adapt to any situation. He can look and point out little cracks or vulnerable spots in your code. He might be a tad stubborn, but thats how experience gets imprinted on your soul, trial by fire.</p>
         </div>
