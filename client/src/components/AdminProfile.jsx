@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 const AdminProfile = (props) => {
   let navigate = useNavigate()
-  let admins = props.admins
 
   const handleUpdate = async (e) => {
     e.preventDefault()
