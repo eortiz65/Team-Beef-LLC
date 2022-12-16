@@ -27,9 +27,10 @@ export const getAdmin = async (data) => {
   }
 }
 
-export const updateAdmin = async (data) => {
+export const updateAdmin = async (id, data) => {
   try {
-    const res = await Client.update('/admin/:admin_id', data)
+    console.log('this is data for updateAdmin', data)
+    const res = await Client.put(`/admin/${id}`, data)
     return res.data
   } catch (error) {
     throw error
@@ -38,7 +39,7 @@ export const updateAdmin = async (data) => {
 
 export const deleteAdmin = async (data) => {
   try {
-    await Client.destroy('/admin/:admin_id', data)
+    await Client.delete(`/admin/${data}`)
     return alert('Admin Deleted')
   } catch (error) {
     throw error
