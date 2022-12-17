@@ -9,15 +9,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Client.belongsTo(models.Admin, { foreignKey: 'adminId' })
-      Client.belongsToMany(models.Contract, {
-        as: 'clientcontract',
-        through: models.ClientContract,
-        foreignKey: 'postId'
-      })
-      Client.hasMany(models.Contract, {
-        as: 'associated_contracts',
-        foreignKey: 'clientId'
-      })
     }
   }
   Client.init(
@@ -36,6 +27,14 @@ module.exports = (sequelize, DataTypes) => {
       },
       comments: {
         type: DataTypes.STRING
+      },
+      adminId: {
+        type: DataTypes.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'admins',
+          key: 'id'
+        }
       },
       createdAt: {
         allowNull: false,

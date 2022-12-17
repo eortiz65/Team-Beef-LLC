@@ -7,6 +7,7 @@ import Register from './components/Register'
 import Login from './components/Login'
 import AboutBeef from './components/AboutBeef'
 import Admins from './components/Admins'
+import Clients from './components/Clients'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/aboutbeef" element={<AboutBeef />} />
           <Route path="/admins" element={<Admins />} />
+          <Route path="/clients" element={<Clients />} />
         </Routes>
       </main>
     </div>
