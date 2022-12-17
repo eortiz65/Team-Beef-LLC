@@ -20,8 +20,8 @@ const Clients = () => {
         {clients.map((client) => (
         <ClientProfile key={client.id} client={client} apiCall={apiCall}/>
       ))}
-      <div> {<ClientForm/>} </div>   
-      </div> : <div> {<ClientForm/>} </div>} 
+      <div> {<ClientForm apiCall={apiCall}/>} </div>   
+      </div> : <div> {<ClientForm apiCall={apiCall}/>} </div>} 
       
     </div>
   )

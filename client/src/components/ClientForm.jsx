@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { createClient } from '../services/axios'
 
-const ClientForm = () => {
+const ClientForm = (props) => {
   let navigate = useNavigate()
   const [formValues, setFormValues] = useState( { 
       company: '',
@@ -20,21 +20,21 @@ const ClientForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     await createClient({
-        name: formValues.name,
-        email: formValues.email,
-        password: formValues.password,
+        company: formValues.company,
+        contact: formValues.contact,
+        services: formValues.services,
         comments: formValues.comments,
         adminId: formValues.adminId
     })
 
     setFormValues({
-        name: '',
-        email: '',
-        password: '',
+        company: '',
+        contact: '',
+        services: '',
         comments: '',
         adminId: ''
     })
-
+    props.apiCall()
     navigate('/clients')
   }
   
