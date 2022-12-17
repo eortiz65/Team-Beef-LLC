@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { deleteClient, updateClient } from "../services/axios"
 import { useNavigate } from "react-router-dom";
 
