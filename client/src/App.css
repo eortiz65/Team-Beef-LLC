@@ -117,7 +117,7 @@ nav {
 
 /* Admin styles*/
 
-.admin-container {
+.admins-container, .clients-container {
   padding: 0 0 40px;
 }
 

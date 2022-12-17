@@ -83,7 +83,7 @@ const ClientForm = () => {
                 onChange={handleChange}
                 name="adminId"
                 type="int"                    
-                placeholder='Additional comments'
+                placeholder='Admin Assigned'
                 value={formValues.adminId}
                 required/>         
             <button className="client-button" disabled={(!formValues.company || !formValues.contact || !formValues.adminId || !formValues.services )}>Create Client</button>
